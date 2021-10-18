@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+    web:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: php:7.2-apache
+        container_name: phone
+        volumes:
+        - .:/var/www/html/
+        ports:
+        - 8000:80

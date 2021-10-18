@@ -19,3 +19,5 @@ if (slider1) {
 
 
 /* Testimonial */
+
+AOS.init();

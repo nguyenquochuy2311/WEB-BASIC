@@ -121,3 +121,31 @@ body {
     display: flex;
     width: 800px;
 }
+
+.product .popup-card .product-img {
+    position: relative;
+    z-index: 2;
+    background: #1D212B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+}
+
+.product .popup-card .product-img img {
+    position: relative;
+    z-index: 2;
+    width: 450px;
+    left: -40px;
+}
+
+.product .popup-card .info {
+    display: flex;
+    z-index: 2;
+    background: #fff;
+    flex-direction: column;
+    width: 55%;
+    height: 100%;
+    padding: 40px;
+    border-radius: 10px;
+}

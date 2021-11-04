@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Zoom</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="xzoom-container">
+            <img class="xzoom" xriginal="./images/1-min.jpg" src="./images/1-min.jpg" alt="">
+            <div class="xzoom-thumbs">
+                <a href="./images/1.jpg">
+                    <img class="xzoom-gallery" src="./images/1-min.jpg" xpreview="./images/1-min.jpg">
+                </a>
+                <a href="./images/2.jpg">
+                    <img class="xzoom-gallery" src="./images/2-min.jpg" xpreview="./images/2-min.jpg">
+                </a>
+                <a href="./images/3.jpg">
+                    <img class="xzoom-gallery" src="./images/3-min.jpg" xpreview="./images/3-min.jpg">
+                </a>
+                <a href="./images/4.jpg">
+                    <img class="xzoom-gallery" src="./images/4-min.jpg" xpreview="./images/4-min.jpg">
+                </a>
+            </div>
+        </div>
+        <div class="description">
+            <h1>Product Name</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cupiditate tempora deleniti quas sed, earum voluptate vel doloremque voluptates, iure eos minima, ab dolore deserunt labore cumque quasi explicabo placeat.</p>
+            <span>500.000đ</span>
+            <div>
+                <button class="buy">Buy Now</button>
+                <button class="cart">Add To Cart</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="zoom.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

@@ -17,6 +17,7 @@ body {
 .container {
     position: relative;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -114,6 +115,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Hidden PopUp */
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+/* Open PopUp */
+
+.product .popup-view.active {
+    opacity: 1;
+    visibility: visible;
 }
 
 .product .popup-card {
@@ -223,5 +235,52 @@ body {
     .product .popup-card {
         flex-direction: column;
         width: 550px;
+        height: auto;
+    }
+    .product .popup-card .product-img {
+        z-index: 3;
+        width: 100%;
+        height: 200px;
+        transform: translateX(0);
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .product .popup-card .product-img img {
+        left: initial;
+        max-width: 100%;
+    }
+    .product .popup-card .info {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+    }
+    .product .popup-card .info h2 {
+        margin: 20px 5px 5px 5px;
+        font-size: 25px;
+    }
+    .product .popup-card .info h2 span {
+        font-size: 10px;
+    }
+    .product .popup-card .info p {
+        margin: 5px;
+        font-size: 13px;
+    }
+    .product .popup-card .info .price {
+        margin: 5px;
+        font-size: 30px;
+    }
+    .product .popup-card .info .add-cart-btn {
+        margin: 5px auto;
+        padding: 5px 40px;
+        font-size: 14px;
+    }
+    .product .popup-card .info .add-wish {
+        font-size: 14px;
+    }
+    .product .popup-card .close-btn {
+        z-index: 4;
     }
 }

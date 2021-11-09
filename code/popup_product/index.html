@@ -17,18 +17,72 @@
             <div class="product-card">
                 <h2 class="name">Nike Mercurial 1</h2>
                 <span class="price">500.000 đ</span>
-                <a href="" class="popup-btn">Quick View</a>
+                <a href="#" class="popup-btn">Quick View</a>
                 <img src="./images/nike1.png" class="product-img" alt="">
             </div>
             <div class="popup-view">
                 <div class="popup-card">
-                    <a href=""><i class="fas fa-times close-btn"></i></a>
+                    <a href="#"><i class="fas fa-times close-btn"></i></a>
                     <div class="product-img">
                         <img src="./images/nike1.png" alt="">
                     </div>
                     <div class="info">
                         <h2>Nike Mercurial 1<br><span>Men's Sport</span></h2>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis id, quasi omnis quas ut quidem quo! Voluptatibus doloremque enim consequatur saepe sit, facere accusamus odit natus, illum soluta sapiente? Modi.</p>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis id, quasi omnis quas ut
+                            quidem quo! Voluptatibus doloremque enim consequatur saepe sit, facere accusamus odit natus,
+                            illum soluta sapiente? Modi.</p>
+                        <span class="price">500.000đ</span>
+                        <a href="#" class="add-cart-btn">Add To Cart</a>
+                        <a href="#" class="add-wish">Add To Wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-card">
+                <h2 class="name">Nike Phantom</h2>
+                <span class="price">800.000 đ</span>
+                <a href="#" class="popup-btn">Quick View</a>
+                <img src="./images/nike2-removebg-preview.png" class="product-img" alt="">
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#"><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <img src="./images/nike2-removebg-preview.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h2>Nike Phantom<br><span>Boy's Sport</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis id, quasi omnis quas ut
+                            quidem quo! Voluptatibus doloremque enim consequatur saepe sit, facere accusamus odit natus,
+                            illum soluta sapiente? Modi.</p>
+                        <span class="price">800.000đ</span>
+                        <a href="#" class="add-cart-btn">Add To Cart</a>
+                        <a href="#" class="add-wish">Add To Wishlist</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="product">
+            <div class="product-card">
+                <h2 class="name">Nike Phantom 2</h2>
+                <span class="price">1.000.000 đ</span>
+                <a href="#" class="popup-btn">Quick View</a>
+                <img src="./images/nike3-removebg-preview.png" class="product-img" alt="">
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <a href="#"><i class="fas fa-times close-btn"></i></a>
+                    <div class="product-img">
+                        <img src="./images/nike3-removebg-preview.png" alt="">
+                    </div>
+                    <div class="info">
+                        <h2>Nike Phantom 2<br><span>Men's Sport</span></h2>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis id, quasi omnis quas ut
+                            quidem quo! Voluptatibus doloremque enim consequatur saepe sit, facere accusamus odit natus,
+                            illum soluta sapiente? Modi.</p>
                         <span class="price">500.000đ</span>
                         <a href="#" class="add-cart-btn">Add To Cart</a>
                         <a href="#" class="add-wish">Add To Wishlist</a>
@@ -43,7 +97,7 @@
         var popupBtns = document.querySelectorAll('.popup-btn');
         var closeBtns = document.querySelectorAll('.close-btn');
 
-        var popup = function(popupClick) {
+        var popup = function (popupClick) {
             popupViews[popupClick].classList.add('active');
         }
 

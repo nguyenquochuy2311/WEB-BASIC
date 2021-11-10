@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+.container {
+  width: 350px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.2);
+}
+.container .title {
+  color: #fff;
+  line-height: 65px;
+  text-align: center;
+  background: #1e90ff;
+  font-size: 25px;
+  font-weight: 400;
+  border-radius: 10px 10px 0 0;
+}
+.container .box {
+  padding: 20px 30px;
+  background: #fff;
+  border-radius: 10px;
+}
+.container .box label {
+  display: flex;
+  height: 53px;
+  width: 100%;
+  align-items: center;
+  border: 1px solid lightgrey;
+  border-radius: 50px;
+  margin: 10px 0;
+  padding-left: 20px;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1,
+#option-2:checked ~ .option-2,
+#option-3:checked ~ .option-3,
+#option-4:checked ~ .option-4 {
+  background: #1e90ff;
+  border-color: #1e90ff;
+}
+.container .box label .dot {
+  height: 20px;
+  width: 20px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot,
+#option-2:checked ~ .option-2 .dot,
+#option-3:checked ~ .option-3 .dot,
+#option-4:checked ~ .option-4 .dot {
+  background: #fff;
+}
+.box label .dot::before {
+  position: absolute;
+  content: "";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2);
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+#option-1:checked ~ .option-1 .dot::before,
+#option-2:checked ~ .option-2 .dot::before,
+#option-3:checked ~ .option-3 .dot::before,
+#option-4:checked ~ .option-4 .dot::before {
+  background: #1e90ff;
+  transform: translate(-50%, -50%) scale(1);
+}
+.container .box label .text {
+  color: #1e90ff;
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 10px;
+  transition: color 0.3s ease;
+}
+#option-1:checked ~ .option-1 .text,
+#option-2:checked ~ .option-2 .text,
+#option-3:checked ~ .option-3 .text,
+#option-4:checked ~ .option-4 .text {
+  color: #fff;
+}
+.container .box input[type="radio"] {
+  display: none;
+}

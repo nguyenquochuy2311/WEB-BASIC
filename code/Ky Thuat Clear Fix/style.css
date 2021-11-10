@@ -1,0 +1,21 @@
+div {
+    border: 3px solid #6495ed;
+    padding: 5px;
+}
+  
+.image1 {
+    float: right;
+}
+
+.image2 {
+    float: right;
+}
+
+.clearfix::after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+  

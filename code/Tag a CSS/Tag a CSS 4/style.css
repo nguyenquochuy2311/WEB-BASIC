@@ -1,0 +1,388 @@
+body{
+	background: #222;
+	text-align: center;
+	font-family: 'roboto', sans-serif;
+	padding-top: 20px;
+}
+
+h1{
+	color: white;
+	margin-bottom: 40px;
+}
+
+#wrapper{
+	display: block;
+	margin-bottom: 100px;
+}
+
+div{
+	width: auto;
+	height: 50px;
+}
+
+#madeby{
+	color: #666;
+	text-decoration: none;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#madeby:after{
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 100%;
+	top: 0;
+	right: 0;
+	padding-bottom: 5px;
+	border-bottom: 1.5px solid #777;
+	transition: color 0.3s ease;
+	transition: 0.3s width ease;
+}
+#madeby:hover:after{
+	left: 0;
+	width: 100%;
+	transition: 0.3s width ease;
+}
+#madeby:hover{
+	color: #777;
+	transition: color 0.3s ease;
+}
+
+.button{
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	position: relative;
+	padding: 10px;
+}
+
+
+/* BUTTON EEN */
+
+a.button.one:before, a.button.one:after{
+	content: '';
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	transition: all 0.3s ease;
+}
+a.button.one:before{
+	top: -2.5%;
+	left: -1%;
+	border-top: 2px solid white;
+	border-left: 2px solid white;	
+}
+a.button.one:after{
+	bottom: -2.5%;
+	right: -1%;
+	border-bottom: 2px solid white;
+	border-right: 2px solid white;
+}
+a.button.one:hover:before, a.button.one:hover:after{
+	width: 100%;
+	height: 100%;
+	transition: all 0.3s ease;
+}
+
+
+/* BUTTON TWEE */
+
+a.button.two:before, a.button.two:after{
+  opacity: 0;
+  transition: all 0.3s ease;	
+	font-size: 20px;
+}
+a.button.two:before{
+  content: '[';
+}
+a.button.two:after{
+  content: ']';
+}
+
+a.button.two:hover:before{
+  margin-right: 10px;
+  content: '[';
+  -webkit-transform: translateX(20px);
+  -moz-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 1;
+}
+a.button.two:hover:after{
+  margin-left: 10px;
+  content: ']';
+  -webkit-transform: translateX(-20px);
+  -moz-transform: translateX(-20px);
+  transform: translateX(-20px);
+  opacity: 1;
+}
+
+
+
+/* BUTTON DRIE */
+
+a.button.three:before, a.button.three:after{
+	content: '';
+	position: absolute;	
+	width: 0;
+	height: 0;
+	opacity: 0;
+}
+
+a.button.three:before{
+	top: 0;
+	left: 0;
+	border-top: 2px solid white;
+	border-right: 2px solid white;
+}
+a.button.three:after{
+	bottom: 0;
+	right: 0;
+	border-bottom: 2px solid white;
+	border-left: 2px solid white;
+}
+a.button.three:hover:before{
+	animation: first 0.3s forwards;
+	opacity: 1;
+}
+a.button.three:hover:after{
+	animation: second 0.3s forwards;
+}
+@keyframes first{
+	0%{
+		width: 0%;
+		height: 0%;
+	}
+	25%{
+		width: 100%;
+		height: 0%;
+	}
+	50%{
+		width: 100%;
+		height: 100%;
+	}
+	100%{
+		width: 100%;
+		height: 95%;
+	}
+}
+
+@keyframes second{
+	0%{
+		width: 0%;
+		height: 0%;
+	}
+	50%{
+		width: 0%;
+		height: 0%;
+	}	
+	75%{
+		width: 100%;
+		height: 0%;
+		opacity: 1;
+	}
+	100%{
+		width: 100%;
+		height: 95%;
+		opacity: 1;
+	}
+}
+
+
+/* BUTTON VIER */
+
+a.button.four:before, a.button.four:after{
+	content: '';
+	position: absolute;	
+	width: 0%;
+	height: 100%;
+	border-bottom: 2px solid white;
+	transition: width 0.3s ease;
+}
+
+a.button.four:before{
+	bottom: 0;
+	right: 50%;
+}
+a.button.four:after{
+	bottom: 0;
+	left: 50%;
+}
+a.button.four:hover:after, a.button.four:hover:before{
+	width: 40%;
+	transition: width .2s ease;
+}
+
+
+
+/* button vijf */
+
+a.button.five:after{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	
+	width: 0%;
+	height: 100%;
+	
+	border-bottom: 2px solid white;
+	
+	transition: width 0.3s ease;
+}
+
+a.button.five:hover:after{
+	left: 0;
+	width: 100%;
+	transition: width .3s ease;
+}
+
+
+/* Button six */
+
+a.button.six:after{
+	content: '';
+	width: 100%;
+	height: 120%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 2px solid white;
+	opacity: 0;
+	
+	transition: all .2s ease;
+}
+
+a.button.six:hover:after{
+	opacity: 1;
+	height: 100%;
+	
+	transition: all 0.3s ease;
+}
+
+/* button seven */
+
+a.button.seven:after{
+	content: '';
+	width: 100%;
+	height: 85%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	border-bottom: 2px solid white;
+	opacity: 0;
+	
+	transition: all .2s ease;
+}
+
+a.button.seven:hover:after{
+	opacity: 1;
+	height: 100%;
+	
+	transition: all 0.3s ease;
+}
+
+/* Button eight */
+
+a.button.eight:before, a.button.eight:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+}
+a.button.eight:after{
+	height: 100%;
+	border-bottom: 2px solid white;
+	bottom: 0;
+	left: 0;
+	transition: transform 0.2s ease;
+}
+a.button.eight:before{
+	height: 0%;
+	border-top: 2px solid white;
+	bottom: 0;
+	left: 0;
+	transition: height .3s ease;
+
+}
+a.button.eight:hover:before{
+	height: 100%;
+	transform: scale(1.08);
+	transition: all 0.3s ease;
+}
+a.button.eight:hover:after{
+	transform: scale(1.08);
+	transition: transform 0.4s ease;
+}
+
+
+
+/* Button Nine */
+
+a.button.nine{
+	border: 2px solid #333;
+}
+
+a.button.nine:after{
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: -2px;
+	left: -2px;
+	border: 2px solid white;
+	transform: translate(20px, -20px);
+	opacity: 0;
+	transition: all 0.3s ease;
+}
+
+a.button.nine:hover:after{
+	opacity: 1;
+	animation: nine 0.3s forwards;
+}
+@keyframes nine{
+	0%{
+		transform: translate(-20px, 20px);
+	}
+	100%{
+		transform: translate(0px, 0px);
+	}
+}
+
+
+/* Button ten */
+a.button.ten{
+	color: #333;
+}
+a.button.ten:after{
+	content: 'But not this time...';
+	position: absolute;
+	top: 10px;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color: white;
+	transform: translate(-20px, -20px);
+	transition: all 0.2s ease;
+	opacity: 0;
+}
+
+a.button.ten:hover:after{
+	transform: translate(0px, 0px);
+	opacity: 1;
+	transition: all 0.2s ease;
+}
+
+/* button eleven */
+
+a.button.eleven{
+	border: 2px solid white;
+	transition: all 0.3s ease;
+	transform: translate(0px 10px);
+}
+
+a.button.eleven:hover{
+	box-shadow: 0px 15px 10px -10px #fff;
+	transform: translate(0px 0px);
+}

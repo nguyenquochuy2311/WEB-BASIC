@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1f1f1f;
+  }
+  
+  .link {
+    position: relative;
+    padding: 0 0 2px;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    overflow: hidden;
+  }
+  .link::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2px;
+    background: currentcolor;
+    transform: translateX(-110%);
+    transition: transform 1s ease;
+  }
+  .link:hover::before {
+    transform: translateX(110%);
+  }

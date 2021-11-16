@@ -1,0 +1,25 @@
+1. Giới thiệu bản thân
+Xin chào tất cả mn, mình là NQH học viên khoá 4 của KICC, hiện tại mình đã hoàn thành xong time tt 3 tháng và trở thành nv chính thức của Cf24
+2. Môi trường đang làm việc của bạn như thế nào? Bạn đang làm ở vị trí nào?
+3. Các kiến thức mà bạn đã được học tại KICC có giúp bạn nhiều trong công việc không?
+Ở KICC là mình học được những kthuc nền tảng về lập trình, tư duy cũng như kỹ năng cần thiết để thích nghi bất cứ công việc nào liên quan đến lập trình
+4. Sau kỳ thực tập này, Bạn có định hướng gì cho tương lai không?
+
+
+1.KICC IT
+Bạn đánh giá những kiến thức mà bạn đã giúp ích cho bạn như thế nào trong quá trình học tập?
+Từ những kiến thức vững chắc đã học đó giúp mình tự tin sẽ phát triển, tiếp nhận các kiến thức nâng cao hơn 
+(Rất hữu ích/ Bình thường/ chưa áp dụng được nhiều)
+2.KICC IT
+Trong quá tình học tập tại KICC, ngoài kiến thức chuyên ngành thì bạn thấy môn học nào đã giúp ích cho bạn trong quá trình làm việc 
+(Ví dụ môn tiếng Hàn hoặc hướng dẫn vềvăn hóa doanh nghiệp)
+Ngoài kiến thức chuyên ngành ra, khi mình được học tiếng hàn và làm việc với các thầy cô người hàn mình cũng hiểu một phần nào đó văn hoá và phong cách làm việc của ng` hàn doanh nghiệp hàn, điều đó giúp mình thích nghi nhanh chóng hơn vs công việc mới này
+3. Nếu mong muốn KICC có thêm môn học nào đó, thì bạn sẽ mong đó là môn gì?
+(Ví dụ ngoài môn java còn môn nào khác hoặc ngoài tiếng Hàn cần thêm môn học gì?
+Mình nghĩ KICC các môn học khá đầy đủ các kiến thức
+Ngoài ra ở KICC thời gian dạy về BE chiếm phần time lớn hơn FE, khi tt ở Cf24 mình đảm nhận cviec hầu hết liên quan FE, từ những kiến thức đã học được, giúp mình hiểu và học hỏi nhanh chóng hơn từ các anh chị trong team
+Điều mình mong muốn là trung tâm có thể tăng thời lượng dạy liên quan đến FE để các học viên có thể hoàn thiện về kiến thức hơn nữa, có thể dễ dàng thích ứng các cv khác nhau
+4.KICC IT
+Bạn đánh giá như thế nào về chương trình học của KICC
+Chương trình học KICC đầy đủ, được thầy giải thích chi tiết từ các kthuc dù nhỏ nhất
+5. Bạn thấy môi trường làm việc ở các doanh nghiệp Hàn Quốc như thế nào?

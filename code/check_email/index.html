@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <!--<title> Email Validation in JavaScript | CodingLab </title>-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Fontawesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <form action="#">
+        <div class="input-box">
+            <input class="input" type="text" placeholder="Enter your email">
+            <i class="fas fa-envelope email-icon"></i>
+            <i class="fas fa-exclamation-circle error-icon"></i>
+            <i class="fas fa-check-circle passed-icon"></i>
+            <input class="button" type="submit" value="Check">
+        </div>
+        <p class="text"></p>
+    </form>
+    <script>
+        //getting all attribute
+        const form = document.querySelector("form"),
+            eInput = form.querySelector(".input"),
+            text = form.querySelector(".text");
+
+        form.addEventListener("submit", (e) => {
+            e.preventDefault(); //preventing form from submitting
+            let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; //Regex pattern to validate email
+            form.classList.add("error");
+            form.classList.remove("valid");
+            if (eInput.value == "") {
+                text.innerText = "Email can't be blank";
+            } else if (!eInput.value.match(pattern)) { //if patter is not matched with user's enter value
+                text.innerText = "Please enter a valid email";
+            } else {
+                form.classList.replace("error", "valid"); //replacing error class with valid class
+                text.innerText = "This is a valid email";
+            }
+        });
+    </script>
+</body>
+
+</html>

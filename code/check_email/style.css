@@ -1,0 +1,125 @@
+ /* Google Font CDN Link */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+ }
+ 
+ body {
+     min-height: 100vh;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background: linear-gradient(#4671EA, #AC34E7);
+     padding: 0 20px;
+ }
+ 
+ form {
+     max-width: 550px;
+     width: 100%;
+     background: #fff;
+     padding: 30px;
+     border-radius: 4px;
+ }
+ 
+ form .input-box {
+     display: flex;
+     height: 55px;
+     align-items: center;
+     position: relative;
+ }
+ 
+ .input-box input {
+     height: 100%;
+     outline: none;
+     border: 2px solid #bfbfbf;
+     border-radius: 4px;
+     font-size: 18px;
+     font-weight: 500;
+     padding: 0 45px;
+     transition: all 0.3s ease;
+ }
+ 
+ .input-box input.input {
+     width: 75%;
+     margin-right: 20px;
+ }
+ 
+ form.valid .input-box input.input {
+     border-color: #4671EA;
+ }
+ 
+ .input-box input.input:focus {
+     border-color: #4671EA;
+ }
+ 
+ form.error input.input {
+     border-color: #de0611;
+ }
+ 
+ .input-box input.button {
+     width: 25%;
+     padding: 0;
+     color: #fff;
+     background: #4671EA;
+     border: none;
+     cursor: pointer;
+ }
+ 
+ .input-box input.button:hover {
+     background: #1748cf;
+ }
+ 
+ .input-box i {
+     position: absolute;
+     top: 50%;
+     transform: translateY(-50%);
+     font-size: 20px;
+ }
+ 
+ .input-box i.email-icon {
+     color: #bfbfbf;
+     left: 15px;
+     transition: all 0.3s ease;
+ }
+ 
+ form.valid i.email-icon {
+     color: #1748cf;
+ }
+ 
+ .input-box input.input:focus~i.email-icon {
+     color: #1748cf;
+ }
+ 
+ .input-box .error-icon,
+ .input-box .passed-icon {
+     color: #de0611;
+     left: calc(75% - 60px);
+     display: none;
+ }
+ 
+ form.error .error-icon {
+     display: block;
+ }
+ 
+ .input-box .passed-icon {
+     color: #1748cf;
+ }
+ 
+ form.valid .passed-icon {
+     display: block;
+ }
+ 
+ form .text {
+     color: #de0611;
+     font-size: 16px;
+     font-weight: 500;
+     margin: 10px 0 -10px 2px;
+ }
+ 
+ form.valid .text {
+     color: #1748cf;
+ }

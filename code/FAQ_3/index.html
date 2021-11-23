@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="heading">frequently asked questions</h1>
+
+    <div class="accordion-container">
+
+        <div class="accordion active">
+            <div class="accordion-heading">
+                <h3>accordion heading 01</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel adipisci voluptas ut deserunt magnam tempora esse, necessitatibus sit soluta minima quos atque porro, explicabo saepe expedita quibusdam consectetur? Nemo!
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>accordion heading 02</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel adipisci voluptas ut deserunt magnam tempora esse, necessitatibus sit soluta minima quos atque porro, explicabo saepe expedita quibusdam consectetur? Nemo!
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>accordion heading 03</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel adipisci voluptas ut deserunt magnam tempora esse, necessitatibus sit soluta minima quos atque porro, explicabo saepe expedita quibusdam consectetur? Nemo!
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>accordion heading 04</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel adipisci voluptas ut deserunt magnam tempora esse, necessitatibus sit soluta minima quos atque porro, explicabo saepe expedita quibusdam consectetur? Nemo!
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>accordion heading 05</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel adipisci voluptas ut deserunt magnam tempora esse, necessitatibus sit soluta minima quos atque porro, explicabo saepe expedita quibusdam consectetur? Nemo!
+            </p>
+        </div>
+
+        <div class="accordion">
+            <div class="accordion-heading">
+                <h3>accordion heading 06</h3>
+                <i class="fas fa-angle-down"></i>
+            </div>
+            <p class="accordion-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae vel adipisci voluptas ut deserunt magnam tempora esse, necessitatibus sit soluta minima quos atque porro, explicabo saepe expedita quibusdam consectetur? Nemo!
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+
+<script>
+
+let accordions = document.querySelectorAll('.accordion-container .accordion');
+
+accordions.forEach(acco =>{
+    acco.onclick = () =>{
+        accordions.forEach(subAcco => { subAcco.classList.remove('active') });
+        acco.classList.add('active');
+    }
+})
+
+</script>
+
+    
+</body>
+</html>

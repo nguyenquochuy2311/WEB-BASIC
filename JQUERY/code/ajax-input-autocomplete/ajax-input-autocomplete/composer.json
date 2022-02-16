@@ -1,0 +1,14 @@
+{
+	"name": "gozoro/jquery-autocompleter",
+	"description": "A jQuery plugin autocomplete.",
+	"keywords": ["jQuery","autocomplete", "autocompleter", "ajax", "suggestions"],
+	"homepage": "https://github.com/gozoro/jquery-autocompleter",
+	"type": "plugin",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Gozoro",
+			"email": "gozoro@yandex.ru"
+		}
+	]
+}

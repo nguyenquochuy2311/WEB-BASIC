@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 3,
+      "name": "Catherine Waberer",
+      "email": "cwaberer2@umn.edu",
+      "password": "cwaberer2",
+      "phone": "652-951-9313",
+      "birthday": "12/2/2002",
+      "bio": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.",
+      "gender": "Female",
+      "avatar": "https://robohash.org/dolortemporibussoluta.png?size=150x150&set=set1"
+    },
+    {
+      "id": 4,
+      "name": "Bobbette Kenway",
+      "email": "bkenway3@wiley.com",
+      "password": "bkenway3",
+      "phone": "767-354-8928",
+      "birthday": "11/14/1995",
+      "bio": "In congue. Etiam justo. Etiam pretium iaculis justo.",
+      "gender": "Female",
+      "avatar": "https://robohash.org/abesselaudantium.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 5,
+      "name": "Goober Banting",
+      "email": "gbanting4@prweb.com",
+      "password": "gbanting4",
+      "phone": "563-471-5104",
+      "birthday": "9/22/1992",
+      "bio": "Nulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/atqueearumquaerat.png?size=150x150&set=set1"
+    },
+    {
+      "id": 6,
+      "name": "Roana Clail",
+      "birthday": "5/13/1992",
+      "email": "rclail5@geocities.jp",
+      "phone": "952-408-0056111111"
+    },
+    {
+      "id": 7,
+      "name": "Lindy Hubbard",
+      "email": "lhubbard6@networkadvertising.org",
+      "password": "lhubbard6",
+      "phone": "967-486-1276",
+      "birthday": "11/24/2006",
+      "bio": "Sed sagittis. Nam congue, risus semper porta volutpat, quam pede lobortis ligula, sit amet eleifend pede libero quis orci. Nullam molestie nibh in lectus.\n\nPellentesque at nulla. Suspendisse potenti. Cras in purus eu magna vulputate luctus.\n\nCum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.",
+      "gender": "Male",
+      "avatar": "https://robohash.org/doloresnatusaut.jpg?size=150x150&set=set1"
+    },
+    {
+      "id": 8,
+      "name": "Jerad Adney",
+      "birthday": "a",
+      "email": "jadney7@weebly.com",
+      "phone": "787-503-1575"
+    }
+  ]
+}

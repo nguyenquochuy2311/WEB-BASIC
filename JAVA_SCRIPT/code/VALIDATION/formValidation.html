@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Học javascript tại freetuts.net</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        span {
+            color: red;
+            display: block;
+            padding: 5px 0px;
+        }
+    </style>
+    <script>
+        /* VALIDATE FORM
+         * 1. Username không được trống, tối thiểu 5 ký tự, ko chứa ký tự đặc biệt
+         * 2. Mật khẩu không được trống, tối thiểu 8 ký tự
+         * 3. Mật khẩu nhập lại phải trùng
+         * 4. Phone phải là những con số và 10 ký tự
+         * 5. Email phải đúng định dạng, va bat buoc nhap
+         */
+
+        // Lấy giá trị của một input
+        function getValue(id) {
+            return document.getElementById(id).value.trim();
+        }
+
+        // Hiển thị lỗi
+        function showError(key, mess) {
+            document.getElementById(key + '_error').innerHTML = mess;
+        }
+
+        function validate() {
+            var flag = true;
+
+            // 1 username
+            var username = getValue('username');
+            if (username == '' || username.length < 5 || !/^[a-zA-Z0-9]+$/.test(username)) {
+                flag = false;
+                showError('username', 'Vui lòng kiểm tra lại Username');
+            }
+
+            // 2. password
+            var password = getValue('password');
+            var repassword = getValue('repassword');
+            if (password == '' || password.length < 8 || password != repassword) {
+                flag = false;
+                showError('password', 'Vui lòng kiểm tra lại Password');
+            }
+
+            // 3. Phone
+            var phone = getValue('phone');
+            if (phone != '' && !/^[0-9]{10}$/.test(phone)) {
+                flag = false;
+                showError('phone', 'Vui lòng kiểm tra lại Phone');
+            }
+
+            // 4. Email
+            var email = getValue('email');
+            var mailformat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (!mailformat.test(email)) {
+                flag = false;
+
+                showError('phone', 'Vui lòng kiểm tra lại Email');
+            }
+
+            return flag;
+        }
+    </script>
+</head>
+
+<body style="margin: 50px;">
+    <form method="post" action="" id="loginform">
+        <table border="1" cellpadding="10">
+            <tr>
+                <td>Tên đăng nhập: </td>
+                <td>
+                    <input type="text" id="username" name="username" value="" />
+                    <span id="username_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Mật khẩu: </td>
+                <td>
+                    <input type="text" id="password" name="password" value="" />
+                    <span id="password_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Nhập lại mật khẩu: </td>
+                <td>
+                    <input type="text" id="repassword" name="repassword" value="" />
+                    <span id="repassword_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Phone: </td>
+                <td>
+                    <input type="text" id="phone" name="phone" value="" />
+                    <span id="phone_error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Email </td>
+                <td>
+                    <input type="text" id="email" name="email" value="" />
+                    <span id="email_error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Địa chỉ </td>
+                <td>
+                    <input type="text" id="address" name="address" value="" />
+                    <span id="address_error"></span>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+
+                    <input type="submit" onclick="return validate();" id="btn " name="btn " value="Đăng ký " />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
